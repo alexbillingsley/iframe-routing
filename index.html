@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Parent Page</title>
+    <script src="routing.js"></script>
+    <style>
+        #pageLoader{
+            position: absolute;
+            display: none;
+        }
+
+        #pageLoader h3 {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Parent page</h2>
+    <iframe id="iframe"></iframe>
+    <div id="pageLoader">
+        <h3>Loading...</h3>
+    </div>
+    <script>
+        init();
+    </script>
+</body>
+</html>

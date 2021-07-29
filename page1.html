@@ -1,0 +1,16 @@
+<html>
+<head>
+    <title>iFrame Site</title>
+</head>
+
+<body>
+    <h3>iframe Page 1</h3>
+
+    <a href="/page2" data-internal-link>Go to Page 2</a>
+
+    <script src="iframe.routing.js"></script>
+    <script>
+        sendUrlEvent("/page1");
+    </script>
+</body>
+</html>

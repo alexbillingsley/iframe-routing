@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>iFrame Site</title>
+</head>
+
+<body>
+    <div id="page" style="display: none">
+        <h3>iframe Slow Page</h3>
+
+        <a href="/page1" data-internal-link>Go to Page 1</a>
+    </div>
+    <script src="iframe.routing.js"></script>
+    <script>
+        // Simulate a slow loading page
+        setTimeout(function () {
+            sendUrlEvent("/slowpage");
+            document.getElementById("page").style.display = "block";
+        }, 1500);
+    </script>
+</body>
+</html>
